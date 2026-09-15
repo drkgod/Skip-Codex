@@ -1,131 +1,44 @@
-# Projeto Criado com o Skip
+# Skip + Codex · Workspace Experimental
 
-Este projeto foi criado de ponta a ponta com o [Skip](https://goskip.dev).
+Workspace para experimentar a construção de aplicações Skip com assistência do Codex.
 
-## 🚀 Stack Tecnológica
+## Objetivo
 
-- **React 19** - Biblioteca JavaScript para construção de interfaces
-- **Vite** - Build tool extremamente rápida
-- **TypeScript** - Superset tipado do JavaScript
-- **Shadcn UI** - Componentes reutilizáveis e acessíveis
-- **Tailwind CSS** - Framework CSS utility-first
-- **React Router** - Roteamento para aplicações React
-- **React Hook Form** - Gerenciamento de formulários performático
-- **Zod** - Validação de schemas TypeScript-first
-- **Recharts** - Biblioteca de gráficos para React
+O repositório serve como laboratório técnico para validar uma stack moderna de frontend, integração com PocketBase/Skip Cloud e fluxos de desenvolvimento assistido por IA.
 
-## 📋 Pré-requisitos
+## Stack
 
-- Node.js 18+
-- npm
+`React 19` · `TypeScript` · `Vite` · `Tailwind CSS` · `shadcn/ui` · `PocketBase`
 
-## 🔧 Instalação
+## Executar localmente
 
 ```bash
-npm install
+pnpm install
+cp .env.example .env
+pnpm dev
 ```
 
-## 💻 Scripts Disponíveis
+Configure `VITE_POCKETBASE_URL` para uma instância própria.
 
-### Desenvolvimento
+## Comandos
 
 ```bash
-# Iniciar servidor de desenvolvimento
-npm start
-# ou
-npm run dev
+pnpm dev
+pnpm build
+pnpm lint
+pnpm format
+pnpm preview
 ```
 
-Abre a aplicação em modo de desenvolvimento em [http://localhost:5173](http://localhost:5173).
+## Estrutura
 
-### Build
-
-```bash
-# Build para produção
-npm run build
-
-# Build para desenvolvimento
-npm run build:dev
+```text
+src/             aplicação React
+public/          arquivos públicos
+pocketbase/      backend e migrações
+.env.example     contrato de configuração
 ```
 
-Gera os arquivos otimizados para produção na pasta `dist/`.
+## Status
 
-### Preview
-
-```bash
-# Visualizar build de produção localmente
-npm run preview
-```
-
-Permite visualizar a build de produção localmente antes do deploy.
-
-### Linting e Formatação
-
-```bash
-# Executar linter
-npm run lint
-
-# Executar linter e corrigir problemas automaticamente
-npm run lint:fix
-
-# Formatar código com Oxfmt
-npm run format
-```
-
-## 📁 Estrutura do Projeto
-
-```
-.
-├── src/              # Código fonte da aplicação
-├── public/           # Arquivos estáticos
-├── dist/             # Build de produção (gerado)
-├── node_modules/     # Dependências (gerado)
-└── package.json      # Configurações e dependências do projeto
-```
-
-## 🎨 Componentes UI
-
-Este template inclui uma biblioteca completa de componentes Shadcn UI baseados em Radix UI:
-
-- Accordion
-- Alert Dialog
-- Avatar
-- Button
-- Checkbox
-- Dialog
-- Dropdown Menu
-- Form
-- Input
-- Label
-- Select
-- Switch
-- Tabs
-- Toast
-- Tooltip
-- E muito mais...
-
-## 📝 Ferramentas de Qualidade de Código
-
-- **TypeScript**: Tipagem estática
-- **Oxlint**: Linter extremamente rápido
-- **Oxfmt**: Formatação automática de código
-
-## 🔄 Workflow de Desenvolvimento
-
-1. Instale as dependências: `npm install`
-2. Inicie o servidor de desenvolvimento: `npm start`
-3. Faça suas alterações
-4. Verifique o código: `npm run lint`
-5. Formate o código: `npm run format`
-6. Crie a build: `npm run build`
-7. Visualize a build: `npm run preview`
-
-## 📦 Build e Deploy
-
-Para criar uma build otimizada para produção:
-
-```bash
-npm run build
-```
-
-Os arquivos otimizados serão gerados na pasta `dist/` e estarão prontos para deploy.
+Laboratório/experimento. O código pode mudar rapidamente e não deve ser tratado como produto de produção sem revisão de segurança, dados e regras de acesso.
